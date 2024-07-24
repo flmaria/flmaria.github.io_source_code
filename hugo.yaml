@@ -1,0 +1,62 @@
+baseURL: https://flmaria.github.io/
+languageCode: en-us
+title: Flavio Luiz Maria
+publishDir: ../flmaria.github.io
+
+paginate: 5
+
+theme: ["PaperMod"]
+
+menu:
+  main:
+    - name: Archive
+      url: archives
+      weight: 5
+    - name: About
+      url: about/
+      weight: 10
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  
+  displayFullLangName: true
+  
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  
+  homeInfoParams:
+    Title: "Flavio's website"
+    Content: >
+      👋 Welcome to my website
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/flmaria"
+    - name: LinkedIn
+      url: "https://www.linkedin.com/in/flavioluizmaria/"
+    - name: X
+      url: "https://x.com/flaviolm"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
